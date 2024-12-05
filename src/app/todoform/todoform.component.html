@@ -1,0 +1,19 @@
+<h1 class="text-center text-primary">Todo App in Angular</h1>
+<div class="row">
+            <div class="col-6">
+                <div class="form-group">
+                    <label for="newTask">Add New</label>
+                  
+                    <input type="text" class="form-control" id="newTask" [(ngModel)]='todoinput' name="todoinput" placeholder="enter cheyandooo">
+                </div>
+            </div>
+            <div class="col-3 mt-4">
+                <button class="btn btn-success" (click)="addTask()" [disabled]=!todoinput.length>Add</button>
+            </div>
+
+            <div class="col-3 mt-4">
+                <button class="btn btn-danger"(click)="reset()" [disabled]=!todoinput.length>Reset</button>
+            </div>
+</div>
+
+
